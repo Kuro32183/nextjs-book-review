@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <header className="flex justify-between  items-center">
+    <header className="flex justify-between  items-center mb-8">
       <div>
         <Link href="/">
           <a>
@@ -13,7 +13,7 @@ const Header = () => {
         </Link>
       </div>
       <nav>
-        <ul className="flex gap-3">
+        <ul className="flex gap-3 md:gap-6 text-[1.5rem] md:text-[2rem]">
           <li>
             <Link href="/user/register">
               <a>ユーザー登録</a>
