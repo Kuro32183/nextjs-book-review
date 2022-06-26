@@ -1,5 +1,3 @@
-zyfx35of;
-movie - review;
 import { useState } from "react";
 
 const ImgInput = (props) => {
