@@ -7,7 +7,7 @@ const ImgInput = (props) => {
     try {
       const data = new FormData();
       data.append("file", imageFile);
-      data.append("upload_preset", "zyfx35of");
+      data.append("upload_preset", "ko0w2e4k");
       data.append("cloud_name", "movie-review");
       const response = await fetch(
         "https://api.cloudinary.com/v1_1/movie-review/image/upload",
