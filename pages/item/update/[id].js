@@ -12,7 +12,7 @@ const UpdateItem = (props) => {
     e.preventDefault();
     try {
       const response = await fetch(
-        `http://localhost:3000/api/item/update/${props.singleItem._id}`,
+        `https://nextjs-movie-review.vercel.app//api/item/update/${props.singleItem._id}`,
         {
           method: "POST",
           headers: {
@@ -94,7 +94,7 @@ export default UpdateItem;
 
 export const getServerSideProps = async (context) => {
   const response = await fetch(
-    `http://localhost:3000/api/item/${context.query.id}`
+    `https://nextjs-movie-review.vercel.app//api/item/${context.query.id}`
   );
   const singleItem = await response.json();
 
