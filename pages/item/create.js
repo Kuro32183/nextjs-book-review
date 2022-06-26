@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Head from "next/head";
 import useAuth from "../../utils/useAuth";
-import StarRating from "../../components/rating";
+import ImgInput from "../../components/imgInput";
 
 const CreateItem = () => {
   const [title, setTitle] = useState("");
@@ -47,6 +47,7 @@ const CreateItem = () => {
           <title>レビュー作成</title>
         </Head>
         <h1 className="page-title text-[1.5rem]">レビュー作成</h1>
+        <ImgInput image={image} setImage={setImage} />
         <form onSubmit={handleSubmit} className="">
           <input
             value={title}
