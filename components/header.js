@@ -7,7 +7,7 @@ const Header = () => {
         <Link href="/">
           <a>
             <h1 className="text-red-400 text-[3rem] md:text-[5rem]">
-              Book <span>Review</span>
+              <span>Review</span>
             </h1>
           </a>
         </Link>
